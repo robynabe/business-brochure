@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// variable imports //
+@import "../scss/variables/variables.scss";
+
+// component imports //
+@import "../scss/components/main.scss";
+
+// Master css //
+h1 {
+  color: $primary-color;
+}
