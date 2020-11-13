@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Business Brochure</title>
+</head>
+<body>
+    <header>
+        <button class="btn-menu">Menu</button>
+    <nav>
+        <ul id="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="#0">Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="#0">About</a></li>
+            <li class="nav-li"><a class="nav-a" href="#0">Menu</a></li>
+        </ul>
+        <input type="text" placeholder="Search..">
+        <i class="fa fa-search"></i>
+    </nav>
+    </header>
+    <main>
+        <section>
+        <h1>Holey Moley Doughnuts</h1> 
+
+        <div id="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+        <h3>What's in your cart?</h3>
+
+        <div id="cart">
+            <img src="" alt="">
+            <p>Remove Item</p>
+            <label for="quantity">Quantity</label>
+            <select name="quantity" id="quantity">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+              <option value="seven">7</option>
+              <option value="eight">8</option>
+              <option value="nine">9</option>
+              <option value="ten">10</option>
+              <option value="eleven">11</option>
+              <option value="twelve">12</option>
+            </select>
+        </div>
+
+        <div id="form">
+            <form action="/" method="POST" name="post">
+                <div class="form-row special">
+                    <label for="comments">Special Instructions</label>
+                    <textarea id="comments" name="comments"></textarea>
+                  </div>
+
+                <div class="form-row firstname">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" type="text" name="nm">
+                  </div>
+
+                  <div class="form-row lastname">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" type="text" name="nm">
+                  </div>
+
+                  <div class="form-row email">
+                    <label for="email"> Email</label>
+                    <input id="email" type="email" name="email">
+                  </div>
+
+                  <div class="form-row phone">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  </div>
+
+                  <div class="form-row date">
+                    <label for="date">Date</label>
+                    <input id="date" type="date" name="date"
+                            value="2020-11-23"
+                            min="2020-11-23" max="2020-12-31">
+                  </div>
+                  
+                  <div class="form-group gift">
+                      <p>Is this a gift?</p>
+                  <div class="form-row gift-yes">
+                    <input type="radio" id="yes" name="gift">
+                    <label for="yes">Yes</label> 
+                </div>
+
+                <div class="form-row gift-no">
+                    <input type="radio" id="no" name="gift" checked>
+                    <label for="no">No way, all for me!</label> 
+                </div>
+                </div>
+
+                <div class="form-group newsletter"></div>
+                <p>I would love to receive your weekly newsletters!</p>
+                <div class="form-row news">
+                    <input type="checkbox" id="news" name="news">
+                    <label for="news"></label>
+                </div>
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
+        </section>
+        </main>
+       
+        <footer>
+                <section>
+                    <p>&copy; 2020 Seraphina White & Robyn Abe<br> For Educational Purposes Only</p>
+                    <p><a href="#0" class="credits">Credits</a></p> <!-- was thinking we could have the link for the credits page subtle in the footer instead of in the nav, let me know what you think! -->
+                </section>
+        </footer>
+<script src="scripts/index.js"></script>
+</body>
+</html>
