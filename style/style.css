@@ -2,3 +2,15 @@
 h1 {
   color: #eddcc5;
 }
+nav {
+  display: none;
+  color: red;
+}
+.show header nav {
+  display: block;
+  width: 100%;
+}
+/* Id's */
+#logo {
+  width: 100%;
+}
