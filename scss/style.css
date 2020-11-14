@@ -15,20 +15,32 @@ nav {
   top: 0;
   left: 0;
   background-color: #eddcc5;
-  opacity: 0.9;
+  opacity: 0.95;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 15px;
 }
 
+.side-nav ul {
+  margin-left: 80px;
+}
+
 .nav-li {
   list-style: none;
   background-color: #eddcc5;
+  padding: 20px;
 }
 
 .nav-a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
+}
+
+.btn-close {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 60px;
+  color: #000000;
 }
 
 /* id's */
@@ -55,3 +67,8 @@ nav {
 }
 
 /* Hover effects */
+.nav-a:hover,
+.btn-close:hover {
+  color: #ffffff;
+  transition: 250ms ease-in-out;
+}
