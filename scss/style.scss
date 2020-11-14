@@ -7,6 +7,58 @@
 @import "../scss/components/main.scss";
 
 // Master css //
-h1 {
-  color: $primary-color;
+
+svg {
+  margin: 10px;
 }
+nav {
+  font-size: 35px;
+}
+
+/* Classes */
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #eddcc5;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.nav-li {
+  list-style: none;
+  background-color: #eddcc5;
+}
+.nav-a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* id's */
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#search-bar {
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: solid black 1.5px;
+  margin: 10px;
+}
+#cart {
+  color: black;
+  margin: 5px 10px;
+}
+#logo {
+  width: 100%;
+}
+
+/* Hover effects */
