@@ -1,1 +1,1 @@
-h1{color:#eddcc5}
+img{max-width:100%;height:auto}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}h1,h2,h3,h4,h5,h6,p{margin-top:0}h1{color:#eddcc5}#social{display:flex;flex-direction:column}#logo{display:none}#logosmall{display:block}@media (min-width: 690px){#logosmall{display:none}#logo{display:block}}
