@@ -57,6 +57,18 @@ footer a {
   text-decoration: none;
   color: #000000;
 }
+h3{
+
+  text-align: center;
+  
+}
+
+p{
+
+  text-align: center;
+}
+
+
 
 /*
 -----------------------------
@@ -100,6 +112,19 @@ footer a {
   color: #000000;
 }
 
+.button{
+  border: none;
+  text-decoration: none;
+  background-color: #eddcc5;
+  font-size: 1em;
+  padding: 8px 50px;
+  width: 75%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.confirm{
+  text-align: center;
+}
 /*
 -----------------------------
 #id selectors
@@ -145,15 +170,23 @@ footer a {
   padding: 5px;
 }
 #logo {
+  display: none;
+  
+}
+#logosmall {
   display: block;
   position: absolute;
 }
-#logosmall {
-  display: none;
-}
 #two-donuts {
   margin-top: 100px;
+  border: 2px solid #eddcc5;
 }
+
+#glazed-donut{
+  border: 2px solid #eddcc5;
+}
+
+
 
 /*
 -----------------------------
@@ -171,6 +204,13 @@ Hover states
 footer a:hover {
   color: #eddcc5;
   transition: 300ms ease-in-out;
+}
+.button:hover{
+
+  //background-color: rgba(255, 255, 255, 0.137);
+  transition: 300ms ease-in-out;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ 
 }
 
 /*
@@ -202,17 +242,28 @@ footer a:hover {
 
     display: grid;
     grid-template-areas: "one two three";
+    grid-auto-rows: 100%;
   }
   #container-left {
     grid-area: one;
+    
   }
   #container-middle {
     grid-area: two;
+    align-self: center;
+
   }
   #container-right {
     grid-area: three;
+    
   }
-  
+
+  .img{
+
+    display: flex;
+    flex-direction: column;
+  }
+
   #two-donuts{
 
     border: 2px solid #eddcc5;
@@ -221,7 +272,7 @@ footer a:hover {
     border: 2px solid #eddcc5;
   } /* for some reason if I try to style the border on the img ID, it doesn't work so going to play around with it later, also have to work out how to get the images to the far left and the logo in the middle lol*/
   img {
-    max-width: 50%;
+    max-width: 35%;
     height: auto;
     
   }
@@ -243,10 +294,10 @@ footer a:hover {
     display: inline;
   }
   #logosmall {
-    display: block;
+    display: none;
   }
   #logo {
-    display: none;
+    display: block;
   }
   #search-bar {
     display: inline;
@@ -255,4 +306,6 @@ footer a:hover {
     border: solid black 1.5px;
     margin: 30px;
   }
+
+
   }
