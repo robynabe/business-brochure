@@ -14,11 +14,6 @@ HTML selectors
 -----------------------------
 */
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -31,7 +26,7 @@ body {
   margin: 0;
 }
 svg {
-  margin: 30px 15px;
+  margin: 30px 15px 15px 15px;
 }
 nav {
   font-size: 35px;
@@ -50,6 +45,18 @@ p {
 h1 {
   color: $primary-color;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
 
 /*
 -----------------------------
@@ -57,6 +64,9 @@ h1 {
 -----------------------------
 */
 
+.wrapper {
+  height: 100vh;
+}
 .side-nav {
   height: 100%;
   width: 0;
@@ -64,7 +74,7 @@ h1 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #eddcc5;
+  background-image: linear-gradient(to bottom right, #eddcc5, #f7d0c1);
   opacity: 0.95;
   overflow-x: hidden;
   transition: 0.5s;
@@ -76,7 +86,6 @@ h1 {
 
 .nav-li {
   list-style: none;
-  background-color: #eddcc5;
   margin-top: 50px;
 }
 .nav-a {
@@ -107,7 +116,7 @@ h1 {
 }
 #cart {
   color: black;
-  margin: 35px 10px;
+  margin: 35px 10px 10px 10px;
   font-size: 25px;
   text-decoration: none;
 }
@@ -120,10 +129,11 @@ h1 {
   flex-direction: column;
   margin-left: none;
   padding: 10px;
-  background-image: linear-gradient(to bottom right, #dce3f7, #f7d0c1);
+  background-image: linear-gradient(to bottom right, #d8fee6, #f7d0c1);
   opacity: 0.75;
   border-radius: 0px 6px 6px 0px;
   position: fixed;
+  margin-top: 200px;
 }
 #social a {
   color: black;
@@ -132,10 +142,14 @@ h1 {
   padding: 5px;
 }
 #logo {
-  display: none;
+  display: block;
+  position: absolute;
 }
 #logosmall {
-  display: block;
+  display: none;
+}
+#two-donuts {
+  margin-top: 100px;
 }
 
 /*
@@ -150,7 +164,8 @@ Hover states
   transition: 300ms ease-in-out;
 }
 #cart:hover,
-#search-icon:hover {
+#search-icon:hover,
+footer a:hover {
   color: #eddcc5;
   transition: 300ms ease-in-out;
 }
@@ -163,11 +178,11 @@ Hover states
 
 @media (min-width: 690px) {
   #logosmall {
-    display: none;
+    display: block;
   }
 
   #logo {
-    display: block;
+    display: none;
   }
   #search-bar {
     display: inline;
