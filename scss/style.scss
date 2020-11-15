@@ -196,6 +196,36 @@ footer a:hover {
     grid-area: three;
   } */ // I can't figure out the desktop grid...
 
+
+  /* I think it's because the logos were in the header so the grid wasn't working! I just moved them over and created a new section to hold all three containers*/
+  #main{
+
+    display: grid;
+    grid-template-areas: "one two three";
+  }
+  #container-left {
+    grid-area: one;
+  }
+  #container-middle {
+    grid-area: two;
+  }
+  #container-right {
+    grid-area: three;
+  }
+  
+  #two-donuts{
+
+    border: 2px solid #eddcc5;
+  }
+  #glazed-donut{
+    border: 2px solid #eddcc5;
+  } /* for some reason if I try to style the border on the img ID, it doesn't work so going to play around with it later, also have to work out how to get the images to the far left and the logo in the middle lol*/
+  img {
+    max-width: 50%;
+    height: auto;
+    
+  }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -225,4 +255,4 @@ footer a:hover {
     border: solid black 1.5px;
     margin: 30px;
   }
-}
+  }
