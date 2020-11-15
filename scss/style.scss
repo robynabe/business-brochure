@@ -180,6 +180,22 @@ footer a:hover {
 */
 
 @media (min-width: 690px) {
+  /* .wrapper {
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-auto-columns: 1fr 2fr 2fr;
+    grid-auto-rows: 100%;
+  }
+  #container-left {
+    grid-area: one;
+  }
+  #container-middle {
+    grid-area: two;
+  }
+  #container-right {
+    grid-area: three;
+  } */ // I can't figure out the desktop grid...
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
