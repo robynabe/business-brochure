@@ -110,6 +110,10 @@ footer a {
   justify-content: space-between;
 }
 
+#full-menu {
+  display: none;
+}
+
 #search-bar {
   display: none;
 }
@@ -183,6 +187,22 @@ footer a:hover {
 -----------------------------
 */
 @media (min-width: 690px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  #side-menu {
+    display: none;
+  }
+  svg {
+    display: none;
+  }
+  #full-menu {
+    display: inline;
+  }
   #logosmall {
     display: block;
   }
