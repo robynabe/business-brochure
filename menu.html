@@ -9,17 +9,37 @@
 </head>
 <body>
     <header>
-        <button class="btn-menu">Menu</button>
-    <nav>
-        <ul id="nav-ul">
-            <li class="nav-li"><a class="nav-a" href="#0">Home</a></li>
-            <li class="nav-li"><a class="nav-a" href="#0">About</a></li>
-            <li class="nav-li"><a class="nav-a" href="#0">Menu</a></li>
-        </ul>
-        <input type="text" placeholder="Search..">
-        <i class="fa fa-search"></i>
-        <a href="#" class="fa fa-shopping-cart"></a>
-    </nav>
+
+        <div id="nav-bar">
+            <span class="open-slide">
+                <a href="#" id="menu" onclick="openSideMenu()">
+                    <svg id="hamburger" width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#eddcc5" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#000000" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+            <nav id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+                <ul id="nav-ul">
+                    <li class="nav-li"><a class="nav-a" href="#0">Home</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#0">About</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#0">Menu</a></li>
+                </ul>
+            </nav>
+            <nav id="full-menu">
+                <ul>
+                    <li class="nav-li"><a class="nav-a" href="#0">Home</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#0">About</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#0">Menu</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input id ="search-bar" type="text" placeholder="Search..">
+                <i id="search-icon" class="fa fa-search"></i>
+                <a id="cart" href="#" class="fa fa-shopping-cart"></a>
+            </div>
     </header>
     <main>
         <section>
