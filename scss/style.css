@@ -220,33 +220,20 @@ footer a:hover {
 -----------------------------
 */
 @media (min-width: 690px) {
-  /* .wrapper {
-    display: grid;
-    grid-template-areas: "one two three";
-    grid-auto-columns: 1fr 2fr 2fr;
-    grid-auto-rows: 100%;
-  }
-  #container-left {
-    grid-area: one;
-  }
-  #container-middle {
-    grid-area: two;
-  }
-  #container-right {
-    grid-area: three;
-  } */
-  /* I think it's because the logos were in the header so the grid wasn't working! I just moved them over and created a new section to hold all three containers*/
   #main {
     display: grid;
     grid-template-areas: "one two three";
     grid-auto-rows: 100%;
+    grid-template-columns: 50px 50% 500px;
   }
   #container-left {
     grid-area: one;
+    border-right: solid 2px black;
   }
   #container-middle {
     grid-area: two;
     align-self: center;
+    padding: 20px;
   }
   #container-right {
     grid-area: three;
@@ -255,15 +242,11 @@ footer a:hover {
     display: flex;
     flex-direction: column;
   }
-  #two-donuts {
-    border: 2px solid #eddcc5;
-  }
+  #two-donuts,
   #glazed-donut {
     border: 2px solid #eddcc5;
-  }
-  /* for some reason if I try to style the border on the img ID, it doesn't work so going to play around with it later, also have to work out how to get the images to the far left and the logo in the middle lol*/
-  img {
-    max-width: 35%;
+    margin: 20px 0;
+    max-width: 60%;
     height: auto;
   }
   nav ul {

@@ -57,18 +57,13 @@ footer a {
   text-decoration: none;
   color: #000000;
 }
-h3{
-
-  text-align: center;
-  
-}
-
-p{
-
+h3 {
   text-align: center;
 }
 
-
+p {
+  text-align: center;
+}
 
 /*
 -----------------------------
@@ -112,7 +107,7 @@ p{
   color: #000000;
 }
 
-.button{
+.button {
   border: none;
   text-decoration: none;
   background-color: #eddcc5;
@@ -122,7 +117,7 @@ p{
   border-radius: 6px;
   cursor: pointer;
 }
-.confirm{
+.confirm {
   text-align: center;
 }
 /*
@@ -171,7 +166,6 @@ p{
 }
 #logo {
   display: none;
-  
 }
 #logosmall {
   display: block;
@@ -182,11 +176,9 @@ p{
   border: 2px solid #eddcc5;
 }
 
-#glazed-donut{
+#glazed-donut {
   border: 2px solid #eddcc5;
 }
-
-
 
 /*
 -----------------------------
@@ -205,12 +197,11 @@ footer a:hover {
   color: #eddcc5;
   transition: 300ms ease-in-out;
 }
-.button:hover{
-
+.button:hover {
   //background-color: rgba(255, 255, 255, 0.137);
   transition: 300ms ease-in-out;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
- 
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*
@@ -220,62 +211,38 @@ footer a:hover {
 */
 
 @media (min-width: 690px) {
-  /* .wrapper {
-    display: grid;
-    grid-template-areas: "one two three";
-    grid-auto-columns: 1fr 2fr 2fr;
-    grid-auto-rows: 100%;
-  }
-  #container-left {
-    grid-area: one;
-  }
-  #container-middle {
-    grid-area: two;
-  }
-  #container-right {
-    grid-area: three;
-  } */ // I can't figure out the desktop grid...
-
-
-  /* I think it's because the logos were in the header so the grid wasn't working! I just moved them over and created a new section to hold all three containers*/
-  #main{
-
+  #main {
     display: grid;
     grid-template-areas: "one two three";
     grid-auto-rows: 100%;
+    grid-template-columns: 50px 50% 500px;
   }
   #container-left {
     grid-area: one;
-    
+    border-right: solid 2px black;
   }
   #container-middle {
     grid-area: two;
     align-self: center;
-
+    padding: 20px;
   }
   #container-right {
     grid-area: three;
-    
   }
 
-  .img{
-
+  .img {
     display: flex;
     flex-direction: column;
   }
 
-  #two-donuts{
-
+  #two-donuts,
+  #glazed-donut {
     border: 2px solid #eddcc5;
-  }
-  #glazed-donut{
-    border: 2px solid #eddcc5;
-  } /* for some reason if I try to style the border on the img ID, it doesn't work so going to play around with it later, also have to work out how to get the images to the far left and the logo in the middle lol*/
-  img {
-    max-width: 35%;
+    margin: 20px 0;
+    max-width: 60%;
     height: auto;
-    
   }
+  // It looks like its working now?? :)
 
   nav ul {
     display: flex;
@@ -306,6 +273,4 @@ footer a:hover {
     border: solid black 1.5px;
     margin: 30px;
   }
-
-
-  }
+}
