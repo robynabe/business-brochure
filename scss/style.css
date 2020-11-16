@@ -225,7 +225,7 @@ footer a:hover {
     display: grid;
     grid-template-areas: "one two three";
     grid-auto-rows: 100%;
-    grid-template-columns: 50px 50% 500px;
+    grid-template-columns: 5% 60% 30%;
   }
   #container-left {
     grid-area: one;
@@ -249,15 +249,15 @@ footer a:hover {
     margin: 20px 0;
     max-width: 60%;
     height: auto;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
   nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
-    padding: 0;
+  }
+  .nav-li {
+    margin-top: 20px;
   }
   #side-menu {
     display: none;
@@ -267,6 +267,8 @@ footer a:hover {
   }
   #full-menu {
     display: inline;
+    position: absolute;
+    top: 10px;
   }
   #logosmall {
     display: none;
@@ -276,10 +278,30 @@ footer a:hover {
   }
   #search-bar {
     display: inline;
-    padding: 5px 40px 5px 5px;
+    padding: 5px 50px 5px 15px;
     border-radius: 12px;
     border: solid black 1.5px;
-    margin: 30px;
+    margin: 30px 10px 30px 30px;
+  }
+  #vl-top {
+    border-left: 2px solid black;
+    height: 40%;
+    position: fixed;
+    left: 2.5%;
+    margin-left: -3px;
+    top: 0;
+  }
+  #vl-bottom {
+    border-left: 2px solid black;
+    height: 50%;
+    position: fixed;
+    left: 2.5%;
+    margin-left: -3px;
+    top: 60%;
+  }
+  #social {
+    position: absolute;
+    top: 20%;
   }
   .content {
     display: grid;
