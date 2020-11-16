@@ -241,6 +241,8 @@ footer a:hover {
     margin: 20px 0;
     max-width: 60%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   // It looks like its working now?? :)
 
@@ -272,5 +274,54 @@ footer a:hover {
     border-radius: 12px;
     border: solid black 1.5px;
     margin: 30px;
+  }
+
+  // Menu Page //
+  .content {
+    display: grid;
+    grid-template-areas:
+      "one two three"
+      "four five six";
+  }
+  // Just added a border to help with styling the content
+  #cont1 {
+    grid-area: one;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cont2 {
+    grid-area: two;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cont3 {
+    grid-area: three;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cont4 {
+    grid-area: four;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cont5 {
+    grid-area: five;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cont6 {
+    grid-area: six;
+    border: solid 2px #eddcc5;
+    margin: 10px;
+    padding: 10px;
+  }
+  .available-products {
+    max-height: 200px;
+    border-radius: 8px;
   }
 }
