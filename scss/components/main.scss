@@ -1,0 +1,57 @@
+h1 {
+  color: $primary-color;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/*
+-----------------------------
+CLASSES
+-----------------------------
+*/
+.wrapper {
+  height: 100vh;
+}
+.btn-browse {
+  border: none;
+  text-decoration: none;
+  background-color: #eddcc5;
+  font-size: 1em;
+  padding: 8px 50px;
+  width: 75%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.confirm {
+  text-align: center;
+}
+
+/*
+-----------------------------
+ID's
+-----------------------------
+*/
+#logo {
+  display: none;
+}
+#logosmall {
+  display: block;
+  position: absolute;
+}
+#two-donuts {
+  margin-top: 100px;
+  border: 2px solid #eddcc5;
+}
+
+#glazed-donut {
+  border: 2px solid #eddcc5;
+}

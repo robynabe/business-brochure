@@ -1,0 +1,46 @@
+/*
+-----------------------------
+CLASSES
+-----------------------------
+*/
+.nav-li {
+  list-style: none;
+  margin-top: 50px;
+}
+.nav-a {
+  text-decoration: none;
+  color: #000000;
+  padding: 20px;
+}
+.btn-close {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 60px;
+  color: #000000;
+}
+
+/*
+-----------------------------
+ID's
+-----------------------------
+*/
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#full-menu {
+  display: none;
+}
+#search-bar {
+  display: none;
+}
+#cart {
+  color: black;
+  margin: 35px 10px 10px 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+#search-icon {
+  font-size: 25px;
+}
