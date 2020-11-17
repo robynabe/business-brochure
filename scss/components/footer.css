@@ -1,1 +1,21 @@
-null
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*
+-----------------------------
+CLASSES
+-----------------------------
+*/
+/*
+-----------------------------
+ID's
+-----------------------------
+*/
+/*# sourceMappingURL=footer.css.map */
