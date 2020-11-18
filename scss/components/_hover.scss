@@ -16,7 +16,9 @@ footer a:hover {
   transition: 300ms ease-in-out;
 }
 .button:hover,
-.add-to-cart:hover {
+.add-to-cart:hover,
+#btn-remove:hover,
+.btn-place-order:hover {
   //background-color: rgba(255, 255, 255, 0.137);
   transition: 300ms ease-in-out;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
