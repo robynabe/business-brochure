@@ -9,9 +9,17 @@ h3 {
   text-align: center;
 }
 
-p {
-  text-align: center;
+body{
+
+  line-height: 1.4;
 }
+
+/*p {
+  text-align: center;
+} need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
+
+
+
 
 /*
 -----------------------------
@@ -24,15 +32,22 @@ CLASSES
 .btn-browse {
   border: none;
   text-decoration: none;
-  background-color: #eddcc5;
+  background-color: $primary-color;
   font-size: 1em;
   padding: 8px 50px;
   width: 75%;
   border-radius: 6px;
+  margin: 10px;
   cursor: pointer;
 }
+
 .confirm {
   text-align: center;
+}
+
+.abt-title{
+
+  margin-bottom: 5px;
 }
 
 /*
@@ -49,9 +64,24 @@ ID's
 }
 #two-donuts {
   margin-top: 100px;
-  border: 2px solid #eddcc5;
+  border: 2px solid $primary-color;
 }
 
 #glazed-donut {
-  border: 2px solid #eddcc5;
+  border: 2px solid $primary-color;
+}
+
+#about{
+
+  text-align: center;
+}
+
+#choc-don{
+
+  display: none;
+}
+
+#btn-two{
+
+  display: none;
 }
