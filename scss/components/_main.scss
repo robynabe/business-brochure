@@ -1,3 +1,8 @@
+/*
+-----------------------------
+Home Page & universal stylings
+-----------------------------
+*/
 h1 {
   color: $primary-color;
 }
@@ -5,73 +10,30 @@ img {
   max-width: 100%;
   height: auto;
 }
-h3 {
+h3,
+h2 {
   text-align: center;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
-
 body {
   line-height: 1.4;
 }
-
+.confirm {
+  // I can't find which page this is from
+  text-align: center;
+}
 /*p {
   text-align: center;
 } need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
 
-/*
------------------------------
-CLASSES
------------------------------
-*/
+// Classes //
 .wrapper {
   height: 100vh;
 }
-.btn-browse {
-  border: none;
-  text-decoration: none;
-  background-color: $primary-color;
-  font-size: 1em;
-  padding: 8px 50px;
-  width: 75%;
-  border-radius: 6px;
-  margin: 10px;
-  cursor: pointer;
-}
 
-.confirm {
-  text-align: center;
-}
-
-.abt-title {
-  margin-bottom: 5px;
-}
-// MENU //
-
-.content {
-  padding: 15px;
-}
-.content h3 {
-  position: absolute;
-}
-.available-products {
-  width: 250px;
-  border-radius: 5px;
-}
-.add-to-cart {
-  padding: 8px 15px;
-  border: none;
-  background-color: #eddcc5;
-  border-radius: 15px;
-}
-
-#logo-menu-desktop {
-  display: none;
-}
-
-/*
------------------------------
-ID's
------------------------------
-*/
+// ID's //
 #logo {
   display: none;
 }
@@ -88,14 +50,96 @@ ID's
   border: 2px solid $primary-color;
 }
 
+/*
+-----------------------------
+MENU PAGE
+-----------------------------
+*/
+.content {
+  padding: 15px;
+}
+.content h3 {
+  position: absolute;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  border-radius: 5px;
+}
+.available-products {
+  width: 250px;
+  border-radius: 5px;
+}
+.product-info {
+  padding: 90px 10px 10px 10px;
+}
+.add-to-cart {
+  padding: 8px 15px;
+  border: none;
+  background-color: #eddcc5;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+#logo-menu-mobile {
+  margin-bottom: 20px;
+}
+#logo-menu-desktop {
+  display: none;
+}
+#cont1,
+#cont2,
+#cont3,
+#cont4,
+#cont5,
+#cont6 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*
+-----------------------------
+ABOUT PAGE
+-----------------------------
+*/
+// Classes //
+.btn-browse {
+  border: none;
+  text-decoration: none;
+  background-color: $primary-color;
+  font-size: 1em;
+  padding: 8px 50px;
+  width: 75%;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+.abt-title {
+  margin-bottom: 5px;
+}
+// ID's //
 #about {
   text-align: center;
 }
-
 #choc-don {
   display: none;
 }
-
 #btn-two {
   display: none;
 }
+
+/*
+-----------------------------
+CHECKOUT PAGE
+-----------------------------
+*/
+
+/*
+-----------------------------
+CREDITS PAGE
+-----------------------------
+*/

@@ -1,3 +1,8 @@
+/*
+-----------------------------
+Home Page & universal stylings
+-----------------------------
+*/
 h1 {
   color: #eddcc5;
 }
@@ -7,75 +12,29 @@ img {
   height: auto;
 }
 
-h3 {
+h3,
+h2 {
   text-align: center;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 body {
   line-height: 1.4;
 }
 
-/*p {
-  text-align: center;
-} need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
-/*
------------------------------
-CLASSES
------------------------------
-*/
-.wrapper {
-  height: 100vh;
-}
-
-.btn-browse {
-  border: none;
-  text-decoration: none;
-  background-color: #eddcc5;
-  font-size: 1em;
-  padding: 8px 50px;
-  width: 75%;
-  border-radius: 6px;
-  margin: 10px;
-  cursor: pointer;
-}
-
 .confirm {
   text-align: center;
 }
 
-.abt-title {
-  margin-bottom: 5px;
+/*p {
+  text-align: center;
+} need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
+.wrapper {
+  height: 100vh;
 }
 
-.content {
-  padding: 15px;
-}
-
-.content h3 {
-  position: absolute;
-}
-
-.available-products {
-  width: 250px;
-  border-radius: 5px;
-}
-
-.add-to-cart {
-  padding: 8px 15px;
-  border: none;
-  background-color: #eddcc5;
-  border-radius: 15px;
-}
-
-#logo-menu-desktop {
-  display: none;
-}
-
-/*
------------------------------
-ID's
------------------------------
-*/
 #logo {
   display: none;
 }
@@ -94,6 +53,92 @@ ID's
   border: 2px solid #eddcc5;
 }
 
+/*
+-----------------------------
+MENU PAGE
+-----------------------------
+*/
+.content {
+  padding: 15px;
+}
+
+.content h3 {
+  position: absolute;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.available-products {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.product-info {
+  padding: 90px 10px 10px 10px;
+}
+
+.add-to-cart {
+  padding: 8px 15px;
+  border: none;
+  background-color: #eddcc5;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#logo-menu-mobile {
+  margin-bottom: 20px;
+}
+
+#logo-menu-desktop {
+  display: none;
+}
+
+#cont1,
+#cont2,
+#cont3,
+#cont4,
+#cont5,
+#cont6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*
+-----------------------------
+ABOUT PAGE
+-----------------------------
+*/
+.btn-browse {
+  border: none;
+  text-decoration: none;
+  background-color: #eddcc5;
+  font-size: 1em;
+  padding: 8px 50px;
+  width: 75%;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.abt-title {
+  margin-bottom: 5px;
+}
+
 #about {
   text-align: center;
 }
@@ -106,6 +151,16 @@ ID's
   display: none;
 }
 
+/*
+-----------------------------
+CHECKOUT PAGE
+-----------------------------
+*/
+/*
+-----------------------------
+CREDITS PAGE
+-----------------------------
+*/
 /*
 -----------------------------
 Hover states
@@ -264,12 +319,33 @@ ID's
   font-size: 25px;
 }
 
-/*
+@media (min-width: 690px) {
+  /*
 -----------------------------
-@media selectors
+Home Page & universal stylings
 -----------------------------
 */
-@media (min-width: 690px) {
+  svg {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .nav-li {
+    margin-top: 20px;
+  }
+  .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   #main {
     display: -ms-grid;
     display: grid;
@@ -293,18 +369,9 @@ ID's
     padding: 20px;
   }
   #container-right {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: three;
-  }
-  .img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   #two-donuts,
   #glazed-donut {
@@ -315,19 +382,7 @@ ID's
     margin-right: auto;
     margin-left: auto;
   }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-  }
-  .nav-li {
-    margin-top: 20px;
-  }
   #side-menu {
-    display: none;
-  }
-  svg {
     display: none;
   }
   #full-menu {
@@ -368,12 +423,45 @@ ID's
     position: absolute;
     top: 20%;
   }
+  /*
+-----------------------------
+MENU PAGE
+-----------------------------
+*/
+  .content {
+    padding: 15px;
+  }
+  .content h3 {
+    font-family: hero-new, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .available-products {
+    max-height: 200px;
+    border-radius: 5px;
+  }
+  .add-to-cart {
+    padding: 8px 15px;
+    border: none;
+    background-color: #eddcc5;
+    border-radius: 15px;
+  }
   .content {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "one two three" "four five six";
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
+  }
+  #logo-menu-mobile {
+    display: none;
+  }
+  #logo-menu-desktop {
+    display: block;
   }
   #cont1 {
     -ms-grid-row: 1;
@@ -392,8 +480,8 @@ ID's
     padding: 10px;
   }
   #cont3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: three;
     border: solid 2px #eddcc5;
     margin: 10px;
@@ -401,7 +489,7 @@ ID's
   }
   #cont4 {
     -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: four;
     border: solid 2px #eddcc5;
     margin: 10px;
@@ -423,74 +511,15 @@ ID's
     margin: 10px;
     padding: 10px;
   }
-  .available-products {
-    max-height: 200px;
-    border-radius: 8px;
-  }
-  .add-to-cart {
-    padding: 8px 15px;
-    border: none;
-    background-color: #eddcc5;
-    border-radius: 15px;
-  }
-  /*#about{
-
-    display: grid;
-    grid-template-areas: "one two"
-                          "three four" ;
-    grid-template-columns: 50% 50%;
-  }
-  
-  #about{
-  
-    grid-area: one;
-    //margin: 15px 0px 0px 85px;
-  }
-  
-  #map{
-  
-    grid-area: two;
-    //margin: 15px 0px 0px 45px;
-  }
-  
-  #contact{
-  
-    grid-area: three;
-    //margin: 15px 0px 0px 85px;
-  }
-  
-  #location{
-  
-    grid-area: four;
-    //margin: 15px 0px 0px 45px;
-  }*/
-  #btn-one {
-    display: none;
-  }
-  #btn-two {
-    display: inline;
-  }
+  /*
+-----------------------------
+ABOUT PAGE
+-----------------------------
+*/
   .abt-donut {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "one two";
-  }
-  #cof-don {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: one;
-    padding-left: 10px;
-    padding-right: 20px;
-    opacity: .85;
-  }
-  #choc-don {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: two;
-    display: block;
-    padding-left: 20px;
-    padding-right: 10px;
-    opacity: .85;
   }
   .abt-donut {
     position: relative;
@@ -513,6 +542,78 @@ ID's
     height: 250px;
     background-color: #000000;
   }
+  .nude-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 140%;
+    left: 12%;
+    padding-bottom: 10px;
+  }
+  .blk-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #about {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "one two" "three four";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  #about {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  #map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: two;
+  }
+  #contact {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  #location {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: four;
+  }
+  #btn-one {
+    display: none;
+  }
+  #btn-two {
+    display: inline;
+  }
+  #cof-don {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+    padding-left: 10px;
+    padding-right: 20px;
+    opacity: 0.85;
+  }
+  #choc-don {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: two;
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+    opacity: 0.85;
+  }
   #location {
     width: 250px;
     height: 250px;
@@ -534,16 +635,6 @@ ID's
     opacity: 0.95;
     margin: 0px 0px 0px 50px;
   }
-  .blk-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    padding-bottom: 100px;
-  }
   #box1 {
     margin: 75px 100px 0px 0px;
   }
@@ -553,18 +644,16 @@ ID's
   #box3 {
     margin: 75px 0px 0px 100px;
   }
-  .nude-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    top: 140%;
-    left: 12%;
-    padding-bottom: 10px;
-  }
+  /*
+-----------------------------
+CHECKOUT PAGE
+-----------------------------
+*/
+  /*
+-----------------------------
+CREDIT PAGE
+-----------------------------
+*/
 }
 
 /*
