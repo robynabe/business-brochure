@@ -1,3 +1,8 @@
+/*
+-----------------------------
+Home Page & universal stylings
+-----------------------------
+*/
 h1 {
   color: #eddcc5;
 }
@@ -7,24 +12,70 @@ img {
   height: auto;
 }
 
-h3 {
+h3,
+h2 {
   text-align: center;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 body {
   line-height: 1.4;
 }
 
+.confirm {
+  text-align: center;
+}
+
 /*p {
   text-align: center;
 } need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
-/*
------------------------------
-CLASSES
------------------------------
-*/
 .wrapper {
   height: 100vh;
+}
+
+#logo {
+  display: none;
+}
+
+#logosmall {
+  display: block;
+  position: absolute;
+}
+
+#two-donuts {
+  margin-top: 100px;
+  border: 2px solid #eddcc5;
+}
+
+#glazed-donut {
+  border: 2px solid #eddcc5;
+}
+
+/*
+-----------------------------
+MENU PAGE
+-----------------------------
+*/
+.content {
+  padding: 15px;
+}
+
+.content h3 {
+  position: absolute;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.available-products {
+  width: 250px;
+  border-radius: 5px;
 }
 
 /*.btn-browse {
@@ -38,12 +89,20 @@ CLASSES
   margin: 10px;
   cursor: pointer;
 }*/
-.confirm {
+.abt-title {
+  margin-bottom: 5px;
+}
+
+#about {
   text-align: center;
 }
 
-.abt-title {
-  margin-bottom: 5px;
+#choc-don {
+  display: none;
+}
+
+#btn-two {
+  display: none;
 }
 
 .about-text {
@@ -70,35 +129,9 @@ CLASSES
 
 /*
 -----------------------------
-ID's
+CHECKOUT PAGE
 -----------------------------
 */
-#logo {
-  display: none;
-}
-
-#logosmall {
-  display: block;
-  position: absolute;
-}
-
-#two-donuts {
-  margin-top: 100px;
-  border: 2px solid #eddcc5;
-}
-
-#glazed-donut {
-  border: 2px solid #eddcc5;
-}
-
-#about {
-  text-align: center;
-}
-
-#choc-don {
-  display: none;
-}
-
 #btn-two {
   display: none;
 }
@@ -444,37 +477,6 @@ ID's
     background-color: #eddcc5;
     border-radius: 15px;
   }
-  /*#about{
-
-    display: grid;
-    grid-template-areas: "one two"
-                          "three four" ;
-    grid-template-columns: 50% 50%;
-  }
-  
-  #about{
-  
-    grid-area: one;
-    //margin: 15px 0px 0px 85px;
-  }
-  
-  #map{
-  
-    grid-area: two;
-    //margin: 15px 0px 0px 45px;
-  }
-  
-  #contact{
-  
-    grid-area: three;
-    //margin: 15px 0px 0px 85px;
-  }
-  
-  #location{
-  
-    grid-area: four;
-    //margin: 15px 0px 0px 45px;
-  }*/
   #btn-one {
     display: none;
   }
@@ -676,7 +678,7 @@ ID's
   opacity: 0.75;
   border-radius: 0px 6px 6px 0px;
   position: fixed;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #social a {
@@ -711,6 +713,14 @@ footer p {
   text-align: center;
 }
 
+.cart-items {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-bottom: dotted 1px black;
+}
+
 .form-row-special {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,14 +751,6 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px;
-}
-
-#cart-items {
-  display: block;
-  width: 100%;
-  padding: 40px;
-  margin-bottom: 20px;
-  border-bottom: dotted 1px black;
 }
 
 #btn-remove,

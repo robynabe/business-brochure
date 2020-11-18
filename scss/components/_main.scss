@@ -1,3 +1,8 @@
+/*
+-----------------------------
+Home Page & universal stylings
+-----------------------------
+*/
 h1 {
   color: $primary-color;
 }
@@ -5,29 +10,67 @@ img {
   max-width: 100%;
   height: auto;
 }
-h3 {
+h3,
+h2 {
   text-align: center;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
-
-body{
-
+body {
   line-height: 1.4;
 }
-
+.confirm {
+  // I can't find which page this is from
+  text-align: center;
+}
 /*p {
   text-align: center;
 } need to create class/id for all the paragraphs that need to be centered (didn't want to do this before we merged changes because I know you have some <p> in the footer!*/
 
+// Classes //
+.wrapper {
+  height: 100vh;
+}
 
+// ID's //
+#logo {
+  display: none;
+}
+#logosmall {
+  display: block;
+  position: absolute;
+}
+#two-donuts {
+  margin-top: 100px;
+  border: 2px solid $primary-color;
+}
 
+#glazed-donut {
+  border: 2px solid $primary-color;
+}
 
 /*
 -----------------------------
-CLASSES
+MENU PAGE
 -----------------------------
 */
-.wrapper {
-  height: 100vh;
+.content {
+  padding: 15px;
+}
+.content h3 {
+  position: absolute;
+  font-family: hero-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  border-radius: 5px;
+}
+.available-products {
+  width: 250px;
+  border-radius: 5px;
 }
 /*.btn-browse {
   border: none;
@@ -42,12 +85,19 @@ CLASSES
 }*/
 
 .confirm {
+}
+.abt-title {
+  margin-bottom: 5px;
+}
+// ID's //
+#about {
   text-align: center;
 }
-
-.abt-title{
-
-  margin-bottom: 5px;
+#choc-don {
+  display: none;
+}
+#btn-two {
+  display: none;
 }
 
 .about-text{
@@ -74,34 +124,10 @@ CLASSES
 
 /*
 -----------------------------
-ID's
+CHECKOUT PAGE
 -----------------------------
 */
-#logo {
-  display: none;
-}
-#logosmall {
-  display: block;
-  position: absolute;
-}
-#two-donuts {
-  margin-top: 100px;
-  border: 2px solid $primary-color;
-}
 
-#glazed-donut {
-  border: 2px solid $primary-color;
-}
-
-#about{
-
-  text-align: center;
-}
-
-#choc-don{
-
-  display: none;
-}
 
 #btn-two{
 
