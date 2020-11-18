@@ -512,6 +512,14 @@ footer p {
   text-align: center;
 }
 
+.cart-items {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-bottom: dotted 1px black;
+}
+
 .form-row-special {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,14 +550,6 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px;
-}
-
-#cart-items {
-  display: block;
-  width: 100%;
-  padding: 40px;
-  margin-bottom: 20px;
-  border-bottom: dotted 1px black;
 }
 
 #btn-remove,
