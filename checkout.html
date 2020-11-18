@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Business Brochure</title>
 </head>
+
 <body>
-    <header>
-      
-        <div id="nav-bar">
-            <span class="open-slide">
-                <a href="#" id="menu" onclick="openSideMenu()">
-                    <svg id="hamburger" width="30" height="30">
-                        <path d="M0,5 30,5" stroke="#000000" stroke-width="5"/>
-                        <path d="M0,14 30,14" stroke="#eddcc5" stroke-width="5" />
-                        <path d="M0,23 30,23" stroke="#000000" stroke-width="5" />
-                    </svg>
-                </a>
-            </span>
-            <nav id="side-menu" class="side-nav">
-                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-                <ul id="nav-ul">
-                    <li class="nav-li"><a class="nav-a" href="index.html">Home</a></li>
-                    <li class="nav-li"><a class="nav-a" href="about.html">About</a></li>
-                    <li class="nav-li"><a class="nav-a" href="menu.html">Menu</a></li>
-                </ul>
-            </nav>
+    <div id="wrapper">
+        <header>
+
+            <div id="nav-bar">
+                <span class="open-slide">
+                    <a href="#" id="menu" onclick="openSideMenu()">
+                        <svg id="hamburger" width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#000000" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#eddcc5" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#000000" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+                <nav id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+                    <ul id="nav-ul">
+                        <li class="nav-li"><a class="nav-a" href="index.html">Home</a></li>
+                        <li class="nav-li"><a class="nav-a" href="about.html">About</a></li>
+                        <li class="nav-li"><a class="nav-a" href="menu.html">Menu</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <input id="search-bar" type="text" placeholder="Search..">
+                    <i id="search-icon" class="fa fa-search"></i>
+                    <a id="cart" href="checkout.html" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
             <nav id="full-menu">
                 <ul>
                     <li class="nav-li"><a class="nav-a" href="index.html">Home</a></li>
@@ -35,110 +44,126 @@
                     <li class="nav-li"><a class="nav-a" href="menu.html">Menu</a></li>
                 </ul>
             </nav>
-            <div>
-                <input id ="search-bar" type="text" placeholder="Search..">
-                <i id="search-icon" class="fa fa-search"></i>
-            <a id="cart" href="checkout.html" class="fa fa-shopping-cart"></a>
-            </div>
-    </header>
-    <main>
-        <img src="images/donut-logo-header.png" alt="doughnut logo">
-        <section>
-        <div id="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        </div>
 
-        <h3>What's in your cart?</h3>
+        </header>
+    
+        <main>
+                <img src="images/donut-logo.png" alt="doughnut logo">
+            <section>
+                <div id="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
 
-        <div id="cart">
-            <img src="" alt="">
-            <p>Remove Item</p>
-            <label for="quantity">Quantity</label>
-            <select name="quantity" id="quantity">
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-              <option value="five">5</option>
-              <option value="six">6</option>
-              <option value="seven">7</option>
-              <option value="eight">8</option>
-              <option value="nine">9</option>
-              <option value="ten">10</option>
-              <option value="eleven">11</option>
-              <option value="twelve">12</option>
-            </select>
-        </div>
+                <h3>What's in your cart?</h3>
 
-        <div id="form">
-            <form action="/" method="POST" name="post">
-                <div class="form-row special">
-                    <label for="comments">Special Instructions</label>
-                    <textarea id="comments" name="comments"></textarea>
-                  </div>
+                <div id="cart-items">
+                    <!--This is where selected product goes-->
+                    <label for="quantity">Quantity</label>
+                    <select name="quantity" id="quantity">
+                        <option value="two">2</option>
+                        <option value="one">1</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                    </select>
+                    <button id="btn-remove">Remove Item</button>
+                </div>
 
-                <div class="form-row firstname">
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" type="text" name="nm">
-                  </div>
-
-                  <div class="form-row lastname">
-                    <label for="lastname">Last Name</label>
-                    <input id="lastname" type="text" name="nm">
-                  </div>
-
-                  <div class="form-row email">
-                    <label for="email"> Email</label>
-                    <input id="email" type="email" name="email">
-                  </div>
-
-                  <div class="form-row phone">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                  </div>
-
-                  <div class="form-row date">
-                    <label for="date">Date</label>
-                    <input id="date" type="date" name="date"
-                            value="2020-11-23"
-                            min="2020-11-23" max="2020-12-31">
-                  </div>
+                <div id="form">
+                <form action="/" method="POST" name="post">
+                
+                    <div class="form-row-special">
+                        <label for="comments">Special Instructions:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
                   
-                  <div class="form-group gift">
-                      <p>Is this a gift?</p>
-                  <div class="form-row gift-yes">
-                    <input type="radio" id="yes" name="gift">
-                    <label for="yes">Yes</label> 
-                </div>
+                    <div class="name">
+                        <div class="form-row-firstname">
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" type="text" name="nm">
+                        </div>
+                        <div class="form-row-lastname">
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" type="text" name="nm">
+                        </div>
+                    </div>
 
-                <div class="form-row gift-no">
-                    <input type="radio" id="no" name="gift" checked>
-                    <label for="no">No way, all for me!</label> 
-                </div>
-                </div>
+                    <div class="form-row-email">
+                        <label for="email"> Email</label>
+                        <input id="email" type="email" name="email">
+                    </div>
 
-                <div class="form-group newsletter"></div>
-                <p>I would love to receive your weekly newsletters!</p>
-                <div class="form-row news">
-                    <input type="checkbox" id="news" name="news">
-                    <label for="news"></label>
-                </div>
-                <div class="confirm">
-                <input type="submit" value="Place Order" class="button">
-                </div>
-            </form>
-        </div>
-        </section>
+                    <div class="phone-date">
+                        <div class="form-row phone">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div class="form-row date">
+                            <label for="date">Date</label>
+                            <input id="date" type="date" name="date" value="2020-11-23" min="2020-11-23" max="2020-12-31">
+                        </div>
+                    </div>
+                     
+                    <div class="form-group-gift">
+                            <p>Is this a gift?</p>
+                        <div class="form-row gift-yes">
+                            <input type="radio" id="yes" name="gift">
+                            <label for="yes">Yes</label> 
+                        </div>
+                        <div class="form-row gift-no">
+                            <input type="radio" id="no" name="gift" checked>
+                            <label for="no">No way, all for me!</label> 
+                        </div>
+                    </div>
+
+                    <div class="form-group-newsletter">
+                        <p>I would love to receive your weekly newsletters!</p>
+                        <div class="form-row-news">
+                            <input type="checkbox" id="news" name="news">
+                            <label for="news"></label>
+                        </div>
+                    </div>
+                    <div class="confirm">
+                        <input type="submit" value="Place Order" class="btn-place-order">
+                    </div>
+                </form>
+            </section>
         </main>
-       
+    </div>
         <footer>
-                <section>
-                    <p>&copy; 2020 Seraphina White & Robyn Abe<br> For Educational Purposes Only</p>
-                    <p><a href="#0" class="credits">Credits</a></p> <!-- was thinking we could have the link for the credits page subtle in the footer instead of in the nav, let me know what you think! -->
-                </section>
+            <div class="footer-wrap">
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <ul class="footer-hours">
+                        <li>Mon-Thurs: 8:00am - 6:00pm</li>
+                        <li>Weekends: 8:00am - 8:00pm</li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <ul class="footer-info">
+                        <li>604-769-1004</li>
+                        <li>holeymoleydonuts@gmail.com</li>
+                        <li>112 E 7th Avenue, Vancouver</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="creator-credits">
+                <p>
+                    <a href="credits.html" class="credits">Photo Credits</a>
+                </p>
+                <p>&copy; 2020 Seraphina White & Robyn Abe<br> For Educational Purposes Only</p>
+            </div>
         </footer>
-<script src="scripts/index.js"></script>
-</body>
-</html>
+        <script src="scripts/index.js"></script>
+        </body>
+        
+        </html>
