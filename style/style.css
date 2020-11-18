@@ -47,6 +47,30 @@ CLASSES
   margin-bottom: 5px;
 }
 
+.content {
+  padding: 15px;
+}
+
+.content h3 {
+  position: absolute;
+}
+
+.available-products {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  padding: 8px 15px;
+  border: none;
+  background-color: #eddcc5;
+  border-radius: 15px;
+}
+
+#logo-menu-desktop {
+  display: none;
+}
+
 /*
 -----------------------------
 ID's
@@ -445,7 +469,6 @@ ID's
   }
   #btn-two {
     display: inline;
-    width: 25%;
   }
   .abt-donut {
     display: -ms-grid;
