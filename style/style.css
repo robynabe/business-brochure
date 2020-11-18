@@ -151,6 +151,14 @@ CHECKOUT PAGE
   display: none;
 }
 
+#fn, #ln, #dt {
+  padding-right: 3px;
+}
+
+#ln, #dt {
+  padding-left: 5px;
+}
+
 /*
 -----------------------------
 Hover states
@@ -614,6 +622,9 @@ ID's
   }
   #map {
     display: block;
+  }
+  #form {
+    margin-left: 403px;
   }
 }
 
