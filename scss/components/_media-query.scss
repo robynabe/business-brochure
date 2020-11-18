@@ -222,6 +222,7 @@
 
     position: absolute;
     border: 2px solid $primary-color;
+    border-radius: 5px;
     background-color: $primary-color;
     top: 95%;
     left: 50%;
@@ -234,44 +235,50 @@
   .box {
     width: 250px;
     height: 250px;
-    background-color: #000000;
+    background-color: #ffffff;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
   }
 
   #location{
 
     width: 250px;
     height: 250px;
-    //background-image: linear-gradient(to bottom right, #eddcc5, #fad3e0);
     background-color: $primary-color;
     opacity: 0.95;
     margin: 0px 50px 0px 0px;
+    padding: 40px 10px 0px 10px;
+    border-radius: 5px;
   }
 
   #map{
 
     width: 250px;
     height: 250px;
-    //background-image: linear-gradient(to bottom right, #eddcc5, #fad3e0);
-    background-color: $primary-color;
     opacity: 0.95;
-    margin: 0px 50px 0px 50px ;
+    margin: 0px 50px 0px 150px;
+   
+    
   }
 
   #contact{
 
     width: 250px;
     height: 250px;
-    //background-image: linear-gradient(to bottom right, #eddcc5, #fad3e0);
     background-color: $primary-color;
     opacity: 0.95;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 150px;
+    padding: 40px 5px 0px 5px;
+    border-radius: 5px;
+    
   }
 
-  .blk-box{
+  .white-box{
     display: flex;
     justify-content: center;
     position: relative;
     padding-bottom: 100px;
+    
 
   }
 
@@ -298,6 +305,15 @@
     left: 12%;
     padding-bottom: 10px;
     
+  }
+
+  #map-mbl{
+
+    display: none;
+  }
+
+  #map{
+    display: block;
   }
 
   // Checkout //
