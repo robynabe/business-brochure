@@ -18,7 +18,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-h3,
+
 h2 {
   text-align: center;
   font-family: hero-new, sans-serif;
@@ -55,24 +55,21 @@ MENU PAGE
 -----------------------------
 */
 .content {
-  padding: 15px;
+  padding: 50px;
 }
 .content h3 {
-  position: absolute;
   font-family: hero-new, sans-serif;
   font-weight: 200;
   font-style: normal;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  margin: 5px;
-  border-radius: 5px;
+  margin-bottom: 50px;
 }
 .available-products {
-  width: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 5px;
 }
 .product-info {
-  padding: 90px 10px 10px 10px;
+  padding: 0;
 }
 .add-to-cart {
   padding: 8px 15px;
@@ -92,6 +89,8 @@ MENU PAGE
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eddcc5;
 }
 
 /*

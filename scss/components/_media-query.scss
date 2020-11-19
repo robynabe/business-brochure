@@ -4,17 +4,29 @@
 -----------------------------
 */
 
-@media (min-width: 690px) {
+@media (min-width: 700px) {
   // HOME PAGE AND UNIVERSAL STYLINGS //
   svg {
     display: none;
   }
   nav ul {
     display: flex;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
+    justify-content: space-around;
   }
+
   // Classes //
+  .nav-li {
+    margin-top: 20px;
+  }
+  .cart {
+    margin-top: 0;
+    width: 320px;
+    height: 100px;
+    background-color: #eddcc5;
+    border-radius: 0px 0px 30px 30px;
+  }
   .logo-mobile {
     display: none;
   }
@@ -25,6 +37,7 @@
     display: flex;
     flex-direction: column;
   }
+
   // ID's //
   #main {
     display: grid;
@@ -44,12 +57,6 @@
   #container-right {
     grid-area: three;
   }
-
-  .img {
-    display: flex;
-    flex-direction: column;
-  }
-
   #two-donuts,
   #glazed-donut {
     border: 2px solid #eddcc5;
@@ -59,14 +66,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  .nav-li {
-    margin-top: 20px;
-  }
   #side-menu {
     display: none;
   }
@@ -74,26 +73,21 @@
     display: none;
   }
   #full-menu {
+    text-align: center;
     display: inline;
     position: absolute;
-    top: 10px;
+    width: 320px;
+    height: 100px;
     background-color: #eddcc5;
-    padding: 30px;
+    border-radius: 0px 0px 30px 30px;
     margin-left: 55px;
-    border-radius: 0px 0px 200px 200px;
-  }
-  #logosmall {
-    display: none;
-  }
-  #logo {
-    display: block;
   }
   #search-bar {
     display: inline;
     padding: 5px 50px 5px 15px;
     border-radius: 12px;
     border: solid black 1.5px;
-    margin: 30px 10px 30px 30px;
+    margin: 0px 0px 20px 20px;
   }
   #vl-top {
     border-left: 2px solid black;
@@ -111,13 +105,14 @@
     margin-left: -3px;
     top: 60%;
   }
-  // Still trying to figure out social links for desktop view - sorry it looks dumb atm lol
+
   #social {
     position: absolute;
     top: 20%;
   }
 
   // MENU PAGE //
+  // Classes //
   .content {
     display: grid;
     grid-template-areas:
@@ -126,7 +121,17 @@
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
   }
-
+  .available-products {
+    max-height: 200px;
+    border-radius: 8px;
+  }
+  .add-to-cart {
+    padding: 8px 15px;
+    border: none;
+    background-color: #eddcc5;
+    border-radius: 15px;
+  }
+  // ID's //
   #cont1 {
     grid-area: one;
     border: solid 2px #eddcc5;
@@ -163,18 +168,8 @@
     margin: 10px;
     padding: 10px;
   }
-  .available-products {
-    max-height: 200px;
-    border-radius: 8px;
-  }
-  .add-to-cart {
-    padding: 8px 15px;
-    border: none;
-    background-color: #eddcc5;
-    border-radius: 15px;
-  }
-  // ABOUT PAGE //
 
+  // ABOUT PAGE //
   #btn-one {
     display: none;
   }
