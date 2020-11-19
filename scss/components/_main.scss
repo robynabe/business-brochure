@@ -19,7 +19,8 @@ img {
   height: auto;
 }
 
-h2 {
+h2,
+h3 {
   text-align: center;
   font-family: hero-new, sans-serif;
   font-weight: 200;
@@ -55,28 +56,27 @@ MENU PAGE
 -----------------------------
 */
 .content {
-  padding: 50px;
+  padding: 40px;
 }
 .content h3 {
   font-family: hero-new, sans-serif;
   font-weight: 200;
   font-style: normal;
-  margin-bottom: 50px;
 }
 .available-products {
-  width: 220px;
-  height: 220px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 5px;
 }
 .product-info {
-  padding: 0;
+  padding: 0 5px 0 0;
+  margin-top: 50px;
 }
 .add-to-cart {
   padding: 8px 15px;
   border: none;
   background-color: #eddcc5;
   border-radius: 15px;
-  margin-top: 20px;
 }
 #cont1,
 #cont2,
@@ -91,6 +91,7 @@ MENU PAGE
   margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: solid 1px #eddcc5;
+  max-width: 500px;
 }
 
 /*
