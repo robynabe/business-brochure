@@ -34,6 +34,10 @@ h3 {
   height: 100vh;
 }
 
+.logo-home {
+  display: block;
+}
+
 .logo-mobile {
   display: block;
 }
@@ -171,8 +175,6 @@ CHECKOUT PAGE
 form {
   font-size: 14px;
   padding: 5px;
-  margin-right: auto;
-  margin-left: auto;
   border: solid 1px black;
   border-radius: 5px;
   margin: 20px;
@@ -188,8 +190,6 @@ footer p {
 }
 
 .cart-items {
-  display: block;
-  width: 100%;
   padding: 40px;
   margin-bottom: 20px;
   border-bottom: dotted 1px black;
@@ -229,7 +229,6 @@ footer p {
 
 #btn-remove,
 .btn-place-order {
-  display: block;
   border: none;
   margin: 5px;
   padding: 10px 20px;
@@ -285,9 +284,16 @@ Hover states
 -----------------------------
 */
 .nav-a:hover,
-.btn-close:hover,
-#social a:hover,
 footer a:hover {
+  font-size: 25px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  color: #ffffff;
+}
+
+.btn-close:hover,
+#social a:hover {
+  font-size: 25px;
   color: #ffffff;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
@@ -295,12 +301,14 @@ footer a:hover {
 
 #cart:hover,
 #search-icon:hover {
-  color: #eddcc5;
+  font-size: 30px;
+  color: #ffffff;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
 
-#abt-menu:hover, .button:hover,
+#abt-menu:hover,
+.button:hover,
 .add-to-cart:hover,
 #btn-remove:hover,
 .btn-place-order:hover {
@@ -363,7 +371,9 @@ CLASSES
 
 .creator-credits {
   display: block;
-  width: 100%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   border-top: dotted 1px black;
   padding-top: 20px;
 }
@@ -393,7 +403,7 @@ CLASSES
   text-decoration: none;
   color: #000000;
   padding: 20px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .btn-close {
@@ -456,8 +466,14 @@ ID's
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .logo-desktop-home {
+    display: none;
+  }
   .nav-li {
     margin-top: 20px;
+  }
+  .nav-a {
+    font-size: 20px;
   }
   .cart {
     margin-top: 0;
@@ -494,7 +510,6 @@ ID's
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: one;
-    border-right: solid 2px black;
   }
   #container-middle {
     -ms-grid-row: 1;
@@ -536,27 +551,34 @@ ID's
   }
   #search-bar {
     display: inline;
-    padding: 5px 50px 5px 15px;
-    border-radius: 12px;
-    border: solid black 1.5px;
+    padding: 8px 50px 8px 15px;
+    border-radius: 15px;
+    border: none;
     margin: 0px 0px 20px 20px;
   }
   #vl-top {
     border-left: 1px solid black;
-    height: 28%;
+    height: 80%;
     position: fixed;
     left: 28px;
     margin-left: -3px;
     top: 12%;
   }
+  /* border-left: 1px solid black;
+    height: 28%;
+    position: fixed;
+    left: 28px;
+    margin-left: -3px;
+    top: 12%;
+  
   #vl-bottom {
     border-left: 1px solid black;
     height: 28%;
     position: fixed;
     left: 28px;
     margin-left: -3px;
-    top: 58%;
-  }
+    top: 560px;
+  } */
   #social {
     position: fixed;
     top: 32%;
@@ -580,6 +602,9 @@ MENU PAGE
     margin-top: 20px;
   }
   .available-products {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -784,11 +809,27 @@ ABOUT PAGE
 CHECKOUT PAGE
 -----------------------------
 */
+  form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cart-items {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center;
+    margin-left: 40px;
+  }
   #logo-checkout-mobile {
     display: none;
   }
   #logo-checkout-desktop {
     display: block;
+  }
+  #form {
+    margin-left: 30px;
   }
   /*
 -----------------------------

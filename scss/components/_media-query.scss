@@ -17,8 +17,14 @@
   }
 
   // Classes //
+  .logo-desktop-home {
+    display: none;
+  }
   .nav-li {
     margin-top: 20px;
+  }
+  .nav-a {
+    font-size: 20px;
   }
   .cart {
     margin-top: 0;
@@ -48,7 +54,6 @@
   }
   #container-left {
     grid-area: one;
-    border-right: solid 2px black;
   }
   #container-middle {
     grid-area: two;
@@ -85,27 +90,34 @@
   }
   #search-bar {
     display: inline;
-    padding: 5px 50px 5px 15px;
-    border-radius: 12px;
-    border: solid black 1.5px;
+    padding: 8px 50px 8px 15px;
+    border-radius: 15px;
+    border: none;
     margin: 0px 0px 20px 20px;
   }
   #vl-top {
     border-left: 1px solid black;
-    height: 28%;
+    height: 80%;
     position: fixed;
     left: 28px;
     margin-left: -3px;
     top: 12%;
   }
+  /* border-left: 1px solid black;
+    height: 28%;
+    position: fixed;
+    left: 28px;
+    margin-left: -3px;
+    top: 12%;
+  
   #vl-bottom {
     border-left: 1px solid black;
     height: 28%;
     position: fixed;
     left: 28px;
     margin-left: -3px;
-    top: 58%;
-  }
+    top: 560px;
+  } */
 
   #social {
     position: fixed;
@@ -133,6 +145,9 @@ MENU PAGE
     margin-top: 20px;
   }
   .available-products {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
   }
   .add-to-cart {
@@ -322,8 +337,20 @@ ABOUT PAGE
 CHECKOUT PAGE
 -----------------------------
 */
-
+  form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   // Classes //
+  .cart-items {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center;
+    margin-left: 40px;
+  }
 
   // ID's //
   #logo-checkout-mobile {
@@ -331,6 +358,9 @@ CHECKOUT PAGE
   }
   #logo-checkout-desktop {
     display: block;
+  }
+  #form {
+    margin-left: 30px;
   }
 
   /*

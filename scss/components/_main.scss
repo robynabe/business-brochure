@@ -31,6 +31,9 @@ h3 {
 .wrapper {
   height: 100vh;
 }
+.logo-home {
+  display: block;
+}
 .logo-mobile {
   display: block;
   //position: absolute;
@@ -152,8 +155,6 @@ CHECKOUT PAGE
 form {
   font-size: 14px;
   padding: 5px;
-  margin-right: auto;
-  margin-left: auto;
   border: solid 1px black;
   border-radius: 5px;
   margin: 20px;
@@ -168,8 +169,6 @@ footer p {
   text-align: center;
 }
 .cart-items {
-  display: block;
-  width: 100%;
   padding: 40px;
   margin-bottom: 20px;
   border-bottom: dotted 1px black;
@@ -195,7 +194,6 @@ footer p {
 // ID's //
 #btn-remove,
 .btn-place-order {
-  display: block;
   border: none;
   margin: 5px;
   padding: 10px 20px;

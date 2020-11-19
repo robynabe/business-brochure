@@ -4,18 +4,27 @@ Hover states
 -----------------------------
 */
 .nav-a:hover,
-.btn-close:hover,
-#social a:hover,
 footer a:hover {
+  font-size: 25px;
+  transition: 300ms ease-in-out;
+  color: #ffffff;
+}
+
+.btn-close:hover,
+#social a:hover {
+  font-size: 25px;
   color: #ffffff;
   transition: 300ms ease-in-out;
 }
 #cart:hover,
 #search-icon:hover {
-  color: #eddcc5;
+  font-size: 30px;
+  color: #ffffff;
   transition: 300ms ease-in-out;
 }
-#abt-menu:hover,.button:hover,
+
+#abt-menu:hover,
+.button:hover,
 .add-to-cart:hover,
 #btn-remove:hover,
 .btn-place-order:hover {
