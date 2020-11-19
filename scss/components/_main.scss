@@ -30,6 +30,7 @@ h3 {
 // Classes //
 .wrapper {
   height: 100vh;
+  margin-bottom: -50%;
 }
 .logo-home {
   display: block;
@@ -48,9 +49,12 @@ h3 {
   margin-top: 100px;
   border: 2px solid $primary-color;
 }
-
 #glazed-donut {
   border: 2px solid $primary-color;
+}
+#btn-goods {
+  position: absolute;
+  background-color: black;
 }
 
 /*

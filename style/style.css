@@ -32,6 +32,7 @@ h3 {
 
 .wrapper {
   height: 100vh;
+  margin-bottom: -50%;
 }
 
 .logo-home {
@@ -53,6 +54,11 @@ h3 {
 
 #glazed-donut {
   border: 2px solid #eddcc5;
+}
+
+#btn-goods {
+  position: absolute;
+  background-color: black;
 }
 
 /*
@@ -285,15 +291,14 @@ Hover states
 */
 .nav-a:hover,
 footer a:hover {
-  font-size: 25px;
+  font-size: 40px;
+  color: #ffffff;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
-  color: #ffffff;
 }
 
 .btn-close:hover,
 #social a:hover {
-  font-size: 25px;
   color: #ffffff;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
@@ -302,7 +307,7 @@ footer a:hover {
 #cart:hover,
 #search-icon:hover {
   font-size: 30px;
-  color: #ffffff;
+  color: #eddcc5;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
@@ -316,6 +321,23 @@ footer a:hover {
   transition: 300ms ease-in-out;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 700px) {
+  .nav-a:hover,
+  footer a:hover {
+    font-size: 25px;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    color: #ffffff;
+  }
+  #cart:hover,
+  #search-icon:hover {
+    font-size: 30px;
+    color: #ffffff;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
 }
 
 footer {
@@ -403,7 +425,8 @@ CLASSES
   text-decoration: none;
   color: #000000;
   padding: 20px;
-  font-size: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .btn-close {
@@ -564,21 +587,6 @@ ID's
     margin-left: -3px;
     top: 12%;
   }
-  /* border-left: 1px solid black;
-    height: 28%;
-    position: fixed;
-    left: 28px;
-    margin-left: -3px;
-    top: 12%;
-  
-  #vl-bottom {
-    border-left: 1px solid black;
-    height: 28%;
-    position: fixed;
-    left: 28px;
-    margin-left: -3px;
-    top: 560px;
-  } */
   #social {
     position: fixed;
     top: 32%;
