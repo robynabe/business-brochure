@@ -41,10 +41,12 @@ h3 {
 
 .logo-mobile {
   display: block;
+  margin-bottom: 20px;
 }
 
 .logo-desktop {
   display: none;
+  margin-bottom: 10px;
 }
 
 #two-donuts {
@@ -294,6 +296,18 @@ footer p {
 CREDITS PAGE
 -----------------------------
 */
+ol {
+  list-style: none;
+}
+
+.photographers {
+  max-width: 300px;
+  border: solid 2px #eddcc5;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
 /*
 -----------------------------
 Hover states
@@ -497,6 +511,10 @@ ID's
     padding: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .wrapper {
+    height: 100%;
+    margin-bottom: 0;
   }
   .logo-desktop-home {
     display: none;

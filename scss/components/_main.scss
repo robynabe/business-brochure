@@ -37,11 +37,11 @@ h3 {
 }
 .logo-mobile {
   display: block;
-  //position: absolute;
+  margin-bottom: 20px;
 }
 .logo-desktop {
   display: none;
-  //position: absolute;
+  margin-bottom: 10px;
 }
 
 // ID's //
@@ -150,8 +150,7 @@ ABOUT PAGE
   display: none;
 }
 
-#cof-don{
-
+#cof-don {
   opacity: 0.85;
   z-index: -1;
 }
@@ -159,8 +158,7 @@ ABOUT PAGE
   display: none;
 }
 
-#map-mbl{
-
+#map-mbl {
   text-align: center;
 }
 
@@ -259,3 +257,14 @@ footer p {
 CREDITS PAGE
 -----------------------------
 */
+ol {
+  list-style: none;
+}
+
+.photographers {
+  max-width: 300px;
+  border: solid 2px $primary-color;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 30px;
+}

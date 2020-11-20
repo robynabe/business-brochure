@@ -17,6 +17,10 @@
   }
 
   // Classes //
+  .wrapper {
+    height: 100%;
+    margin-bottom: 0;
+  }
   .logo-desktop-home {
     display: none;
   }
@@ -107,7 +111,6 @@
   #social {
     position: fixed;
     top: 32%;
-    
   }
 
   /*
@@ -160,12 +163,10 @@ MENU PAGE
 ABOUT PAGE
 -----------------------------
 */
- 
 
   #about {
     position: relative;
   }
-
 
   .abt-donut {
     display: grid;
@@ -193,7 +194,6 @@ ABOUT PAGE
   }
 
   .about-text {
-
     position: absolute;
     border: 2px solid $primary-color;
     border-radius: 5px;
@@ -226,7 +226,7 @@ ABOUT PAGE
     position: relative;
   }
 
-  .innerbox{
+  .innerbox {
     width: 250px;
     height: 250px;
     background-color: $primary-color;
@@ -287,8 +287,6 @@ ABOUT PAGE
     display: block;
   }
 
-
-
   /*
 -----------------------------
 CHECKOUT PAGE
@@ -327,18 +325,14 @@ CREDITS PAGE
 */
 }
 
-@media (min-width: 400px){
-
-  .about-text{
-
+@media (min-width: 400px) {
+  .about-text {
     width: 50%;
   }
 }
 
-@media (min-width: 1000px){
-
-  .about-text{
-
+@media (min-width: 1000px) {
+  .about-text {
     width: 25%;
   }
 }
