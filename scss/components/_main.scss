@@ -203,11 +203,13 @@ footer p {
 .form-group-newsletter {
   display: flex;
   margin: 10px;
+  margin-bottom: 20px;
 }
 .form-row-email {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  margin-bottom: 20px;
 }
 
 // ID's //
@@ -220,11 +222,13 @@ footer p {
   border-radius: 30px;
 }
 #comments {
-  padding: 20px;
+  padding: 5px;
+  height: 80px;
   background-color: #ffffff;
   border: solid 1px black;
   margin-top: 8px;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 #btn-two {
