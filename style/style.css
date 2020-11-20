@@ -31,8 +31,7 @@ h3 {
 }
 
 .wrapper {
-  height: 100vh;
-  margin-bottom: -50%;
+  height: 100%;
 }
 
 .logo-home {
@@ -49,20 +48,13 @@ h3 {
   margin-bottom: 10px;
 }
 
-#two-donuts {
+/*#two-donuts {
   margin-top: 100px;
-  border: 2px solid #eddcc5;
+  border: 2px solid $primary-color;
 }
-
 #glazed-donut {
-  border: 2px solid #eddcc5;
-}
-
-#btn-goods {
-  position: absolute;
-  background-color: black;
-}
-
+  border: 2px solid $primary-color;
+}*/
 /*
 -----------------------------
 MENU PAGE
@@ -371,6 +363,7 @@ footer {
   font-weight: 200;
   font-style: normal;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 footer a {
@@ -538,15 +531,6 @@ ID's
   .logo-desktop {
     display: block;
     margin-left: 30px;
-  }
-  .img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   #main {
     display: -ms-grid;
@@ -923,5 +907,31 @@ ID's
   font-size: 25px;
   text-decoration: none;
   padding: 5px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
