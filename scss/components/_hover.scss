@@ -4,14 +4,14 @@ Hover states
 -----------------------------
 */
 .nav-a:hover,
-footer a:hover {
+footer a:hover,
+#social a:hover {
   font-size: 40px;
   color: #ffffff;
   transition: 300ms ease-in-out;
 }
 
-.btn-close:hover,
-#social a:hover {
+.btn-close:hover {
   color: #ffffff;
   transition: 300ms ease-in-out;
 }

@@ -44,19 +44,6 @@
     display: block;
     margin-left: 30px;
   }
-  .donut-display {
-    display: block;
-    border: 2px solid $primary-color;
-    margin: 20px 0;
-    max-width: 100%;
-    height: auto;
-  }
-  .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
 
   // ID's //
   #main {
@@ -76,6 +63,11 @@
   }
   #container-right {
     grid-area: three;
+    position: relative;
+  }
+  #btn-see-menu {
+    position: absolute;
+    bottom: 0;
   }
   #side-menu {
     display: none;
@@ -172,11 +164,14 @@ ABOUT PAGE
   .abt-donut {
     display: grid;
     grid-template-areas: "one two";
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #cof-don {
     grid-area: one;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 20px;
     opacity: 0.85;
     z-index: -1;
