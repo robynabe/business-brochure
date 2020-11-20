@@ -31,10 +31,10 @@
     font-size: 20px;
   }
   .cart {
-    margin-top: 0;
+    margin: 0 20px 0 0;
     width: 320px;
     height: 100px;
-    background-color: #eddcc5;
+    background-color: $primary-color;
     border-radius: 0px 0px 30px 30px;
   }
   .logo-mobile {
@@ -44,13 +44,26 @@
     display: block;
     margin-left: 30px;
   }
+  .donut-display {
+    display: block;
+    border: 2px solid $primary-color;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
 
   // ID's //
   #main {
     display: grid;
     grid-template-areas: "one two three";
     grid-auto-rows: 100%;
-    grid-template-columns: 5% 60% 30%;
+    grid-template-columns: 5% 60% 35%;
   }
   #container-left {
     grid-area: one;
@@ -58,19 +71,11 @@
   #container-middle {
     grid-area: two;
     align-self: center;
-    padding: 20px;
+
+    padding: 0 30px 0 0;
   }
   #container-right {
     grid-area: three;
-  }
-  #two-donuts,
-  #glazed-donut {
-    border: 2px solid #eddcc5;
-    margin: 20px 0;
-    max-width: 60%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
   }
   #side-menu {
     display: none;
@@ -84,7 +89,7 @@
     position: absolute;
     width: 320px;
     height: 100px;
-    background-color: #eddcc5;
+    background-color: $primary-color;
     border-radius: 0px 0px 30px 30px;
     margin-left: 55px;
   }
@@ -103,10 +108,10 @@
     margin-left: -3px;
     top: 12%;
   }
-  // Still struggling to get the socials right on desktop.. //
   #social {
     position: fixed;
     top: 32%;
+    opacity: 1 !important;
   }
 
   /*
@@ -134,7 +139,7 @@ MENU PAGE
   .add-to-cart {
     padding: 8px 15px;
     border: none;
-    background-color: #eddcc5;
+    background-color: $primary-color;
     border-radius: 15px;
   }
   // ID's //
@@ -145,7 +150,7 @@ MENU PAGE
   #cont5,
   #cont6 {
     display: block;
-    border: solid 2px #eddcc5;
+    border: solid 2px $primary-color;
     border-radius: 5px;
     margin: 20px;
     padding: 20px 10px;
@@ -220,6 +225,7 @@ ABOUT PAGE
     //padding: 40px 10px 0px 10px;
     border-radius: 5px;
     position: relative;
+    z-index: -1;
   }
 
   .innerbox {

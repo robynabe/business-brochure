@@ -12,21 +12,10 @@ $(document).ready(() => {
 		$('#container-right .img').slick({
       fade: true,
       infinite: true,
-      autoplay: 4000,
+      autoplay: true,
+      autoplaySpeed: 4500,
+      arrows: false,
+      cssEase: 'linear'
     })
-
-    /*$('.shop-device .room-device').slick({
-      responsive: [{
-        breakpoint: 500,
-        settings: {
-          speed: 2000,
-          infinite:true,
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-
-      }]
-    })*/
-    
 });
 
