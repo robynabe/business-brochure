@@ -181,6 +181,8 @@ footer p {
   padding: 40px;
   margin-bottom: 20px;
   border-bottom: dotted 1px black;
+  // display: flex;
+  text-align: center;
 }
 .form-row-special {
   display: flex;
@@ -200,6 +202,13 @@ footer p {
   flex-direction: column;
   margin: 10px;
   margin-bottom: 20px;
+}
+
+.item{
+
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
 }
 
 // ID's //
