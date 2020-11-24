@@ -141,7 +141,7 @@ ABOUT PAGE
   border: 2px solid #eddcc5;
   border-radius: 5px;
   background-color: #eddcc5;
-  top: 50%;
+  top: 57%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -515,7 +515,7 @@ ID's
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .wrapper {
+  #wrapper {
     height: 100%;
     margin-bottom: 0;
   }
@@ -540,7 +540,6 @@ ID's
   }
   .logo-desktop {
     display: block;
-    margin-left: 30px;
   }
   #main {
     display: -ms-grid;
