@@ -122,12 +122,7 @@ MENU PAGE
     margin-left: auto;
     margin-right: auto;
   }
-  .add-to-cart {
-    padding: 8px 15px;
-    border: none;
-    background-color: $primary-color;
-    border-radius: 15px;
-  }
+
   // ID's //
   #cont1,
   #cont2,
@@ -151,11 +146,10 @@ ABOUT PAGE
 -----------------------------
 */
 
-  #about {
-    position: relative;
-  }
+  // Classes //
 
   .abt-donut {
+    position: relative;
     display: grid;
     grid-template-areas: "one two";
     max-width: 1400px;
@@ -163,37 +157,7 @@ ABOUT PAGE
     margin-left: auto;
   }
 
-  #cof-don {
-    grid-area: one;
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: -1;
-  }
-
-  #choc-don {
-    grid-area: two;
-    display: block;
-    padding-left: 20px;
-    padding-right: 10px;
-    opacity: 0.85;
-  }
-
-  .abt-donut {
-    position: relative;
-  }
-
   .about-text {
-    position: absolute;
-    border: 2px solid $primary-color;
-    border-radius: 5px;
-    background-color: $primary-color;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 25px;
-    width: 25%;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.555),
-      0 17px 50px 0 rgba(0, 0, 0, 0.493);
     min-width: 250px;
   }
 
@@ -224,22 +188,42 @@ ABOUT PAGE
     top: 20px;
     left: 20px;
   }
-  
+
   .nude-box {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
   }
 
+  // ID's //
+
+  #cof-don {
+    grid-area: one;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: -1;
+  }
+
+  #choc-don {
+    grid-area: two;
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+    opacity: 0.85;
+  }
+
+  #about {
+    position: relative;
+  }
+
   #map-mbl {
     display: none;
   }
 
-   #map{
+  #map {
+    display: block;
+  }
 
-     display: block;
- }
-  
   /*
 -----------------------------
 CHECKOUT PAGE
@@ -253,8 +237,6 @@ CHECKOUT PAGE
   // Classes //
   .cart-items {
     display: block;
-    // display: flex;
-    // justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -272,12 +254,6 @@ CHECKOUT PAGE
   #form {
     margin-left: 30px;
   }
-
-  /*
------------------------------
-CREDITS PAGE
------------------------------
-*/
 }
 
 @media (min-width: 400px) {
